@@ -6,8 +6,8 @@ public class EmployeeWage{
 	static final int WORKING_DAYS_PER_MONTH=20;
 	static final int Total_WORKING_Hours=100;
 
-	public static void main(String[] args){
-		// Variables
+	public void EmpWageBuilder(){
+
 		int empHrs = 0;
 		int empWage = 0;
 		int salary=0,total_salary=0;
@@ -33,4 +33,8 @@ public class EmployeeWage{
 	}
 		System.out.println("Emp Wage: " + total_salary);
   }
+	public static void main(String[] args){
+		EmployeeWage emp1=new EmployeeWage();
+		emp1.EmpWageBuilder();
+	}
 }
